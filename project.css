@@ -1,0 +1,80 @@
+body{
+
+background:#081b29;
+
+}
+.grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto; /* Define columns */
+            grid-gap: 10px; /* Define gap between grid items */
+            /* Additional grid properties can be added here */
+ }
+
+.grid-item {
+
+background-color: #f0f0f0;
+padding: 20px;
+text-align: center;
+font-size: 1.2em;
+
+}
+
+.grid-item img {
+    max-width: 10%;
+    height: auto;
+    display: block;
+}
+a{
+	padding-top: 30px;
+	display: inline-block;
+	color: white;
+}
+
+a:hover{
+
+	color: blue;
+}
+h1{
+	color: white;
+}
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: #ededed;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #081b29;
+    padding: 10px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ededed;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00abf0;
+}
+
+#menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+}

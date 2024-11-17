@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+
+background:#081b29;
+
+}
+h1{
+	color: white;
+	text-align: center;
+}
+
+a{
+	color: white;
+}
+a:hover{
+	color: blue;
+}
+.v1{
+		font-size: 50px;
+		font-weight: bold;
+}
+.v2{
+	font-size: 30px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: #ededed;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #081b29;
+    padding: 10px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ededed;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00abf0;
+}
+
+#menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+}
+	</style>
+</head>
+<body>
+	<input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+                <nav class="nav-menu">
+                <a href="index1.html" class="a1">Home</a>
+                <a href="project.html" class="a2">Project</a>
+                <a href="contact.html" class="a3">Contact</a>
+                <a href="siteReport.html" class="a4">SiteReport</a>
+                <a href="videoDemo.html" class="a5">VideoDemo</a>
+            </div>
+        </nav>
+	<h1>Video Demo</h1>
+	<a class = "v1" href="video.mp4">Video</a><br><br>
+	<a class = "v2" href="video.mp4">img/ab.mp</a><br><br>
+	<a href="index1.html">Home Page</a>
+</body>
+</html>

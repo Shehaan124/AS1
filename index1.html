@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nabin Thapaliya - Frontend Developer</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style1.css"> -->
+    <style type="text/css">
+        /*/* Resetting default styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows: one for each div */
+    gap: 50px; /* Space between the rows */
+    width: 100%;
+    padding: 20px;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 0px 0;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 35px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #00abf0;
+}
+
+/* Row 2 styling */
+.row2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.btn-box {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-box a:hover {
+    color: blue;
+}
+
+.col1 {
+    display: flex;
+    justify-content: center;
+}
+
+.i1 {
+    text-align: left;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Navbar hover effects */
+.navbar .a1 {
+    position: relative;
+}
+.navbar .a1::after {
+    content: 'Home';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navbar .a1:hover::after {
+    opacity: 1;
+    transform: translateY(100%);
+}
+.navbar .a2 {
+    position: relative;
+}
+.navbar .a2::after {
+    content: 'Project';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navbar .a2:hover::after {
+    opacity: 1;
+    transform: translateY(100%);
+}
+.navbar .a3 {
+    position: relative;
+}
+.navbar .a3::after {
+    content: 'Contact';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navbar .a3:hover::after {
+    opacity: 1;
+    transform: translateY(100%);
+}
+.navbar .a4 {
+    position: relative;
+}
+.navbar .a4::after {
+    content: 'SiteReport';
+    position: absolute;
+    top: -20px;
+    left:0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navbar .a4:hover::after {
+    opacity: 1;
+    transform: translateY(100%);
+}
+.navbar .a5 {
+    position: relative;
+}
+.navbar .a5::after {
+    content: 'VideoDemo';
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.navbar .a5:hover::after {
+    opacity: 1;
+    transform: translateY(100%);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #00abf0;
+}
+
+/* Content styling */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.i1 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+.btn-box {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-box a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-box a:hover {
+    background: transparent;
+    color: #00abf0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 20px;
+        flex-direction: column;
+    }
+    .socialMedia a img{
+        flex-direction: column;
+        height: 10%;
+        width: 10%;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .image-container, .text-content {
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+/* Keep your existing hover effects for navbar items */
+
+
+.socialMedia {
+    display: flex;
+    gap: 10px; /* Adjust this value to control space between icons */
+    margin-bottom: 15px; /* Adds some space below the social media icons */
+}
+
+.socialMedia .social-icon {
+    width: 24px; /* Adjust this value to your preferred size */
+    height: 24px; /* Adjust this value to your preferred size */
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+}
+
+/* If you want the icons to grow slightly on hover, you can add this: */
+.socialMedia .social-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: #ededed;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #081b29;
+    padding: 10px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ededed;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00abf0;
+}
+
+#menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <h2 class="logo">Nabin Thapaliya</h2>
+
+            <div class="nav-links">
+                
+                <a href="#" class="a1">Home</a>
+                <a href="project.html" class="a2">Project</a>
+                <a href="contact.html" class="a3">Contact</a>
+                <a href="siteReport.html" class="a4">SiteReport</a>
+                <a href="videoDemo.html" class="a5">VideoDemo</a>
+            </div>
+
+<div class="nav-links">
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+                <nav class="nav-menu">
+                <a href="#" class="a1">Home</a>
+                <a href="project.html" class="a2">Project</a>
+                <a href="contact.html" class="a3">Contact</a>
+                <a href="siteReport.html" class="a4">SiteReport</a>
+                <a href="videoDemo.html" class="a5">VideoDemo</a>
+            </div>
+
+        </nav>
+        <div class="content">
+            <div class="image-container">
+                <img class="i1" src="img/image.jpg" alt="Nabin Thapaliya">
+            </div>
+            <div class="text-content">
+                <div class = "socialMedia">
+                <a href="https://www.facebook.com/last.ruler.98"><img class = "social-icon" src = "img/fb.JPG"></a>
+                <a href="https://github.com/"><img class = "social-icon" src = "img/gh.png"></a>
+                <a href="https://www.instagram.com/777.xshehaan/"><img class = "social-icon" src = "img/insta.JPG"></a>
+            </div>
+                <h1>Hi, I am Nabin Thapaliya</h1>
+                <h3>Frontend Developer</h3>
+                <div class="btn-box">
+                    <a href="#">Hire me</a>
+                    <a href="#">Let's talk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

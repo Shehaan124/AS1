@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+
+background:#081b29;
+
+}
+p{
+	color: white;
+}
+.btn-primary{
+	height: 50px;
+	width: 70px;
+	font-weight:bold ;
+	background: #00abf0;;
+    color:white;
+}
+.btn-primary:hover {
+	color: blue;
+}
+
+h1{
+	text-align: center;
+	color: white;
+}
+
+a{
+	color: white;
+}
+
+a:hover{
+	color: blue;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    font-size: 30px;
+    color: #ededed;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #081b29;
+    padding: 10px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ededed;
+    font-size: 18px;
+    margin: 10px 0;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #00abf0;
+}
+
+#menu-toggle:checked + .hamburger + .nav-menu {
+    display: flex;
+}
+	</style>
+</head>
+<body>
+
+<input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="hamburger">&#9776;</label>
+                <nav class="nav-menu">
+                <a href="index1.html" class="a1">Home</a>
+                <a href="project.html" class="a2">Project</a>
+                <a href="contact.html" class="a3">Contact</a>
+                <a href="siteReport.html" class="a4">SiteReport</a>
+                <a href="videoDemo.html" class="a5">VideoDemo</a>
+            </div>
+        </nav>
+
+<h1>Contact Page</h1>
+
+
+<div class = "f1">
+
+ 		<form action="index.html" method="" enctype="multipart-form/data">
+
+ 			<label style = "color: white; padding-top: 20px;" for = "name">Username:</label>
+ 			<input style = "margin-top: 20px;" type="text" name = "name"><br>
+ 			<label style = "color: white; padding-top: 20px;" for = "pwd">Password:</label>
+ 			<input style = "margin-top: 20px; margin-left: 2px" type="password" name = "pwd"><br>
+ 			<label style = "color: white; padding-top: 20px;" for = "email">Email:</label>
+ 			<input style = "margin-top: 20px; margin-left: 25px" type="Email" name = "email"><br>
+ 			<input class = "btn-primary" style = "margin-left: 90px; margin-top: 20px;" type="submit" name="">
+
+ 		</form>
+ 		
+ </div>
+
+
+
+ <p>Name:    Nabin Thapaliya</p>
+<p>Email:    thapaliyanabin2060@gmail.com</p>
+<p>Phone Number: +977-9884795453</p>
+
+
+
+<a href="index1.html">Home Page</a>
+</body>
+</html>
